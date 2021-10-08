@@ -8,6 +8,12 @@ import (
 	"strings"
 )
 
+func Mean(arr []float64) float64 {
+	var sum float64 = Sum(arr)
+
+	return sum / float64(len(arr))
+}
+
 func Percentile(arr []float64, per float64) float64 {
 	sort.Float64s(arr)
 
